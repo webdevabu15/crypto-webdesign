@@ -1,0 +1,127 @@
+.body{
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #85cbe8;
+}
+
+.transfer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.transfer > select{
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.watch-list-btn{
+    background: #87CEEB;
+    padding: 8px 19px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.sidebar,.def{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    color:transparent;
+    transform: translateX(-200px);
+    height: 0vh;
+    background-color: #515151;
+    flex-direction: column;
+    transition: 0.3s;
+    opacity: 0;
+    width: 0 !important;
+}
+
+.sidebar-active{
+    transform: translateX(00px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    color:#fff;
+    width: 500px;
+    height: 240vh;
+    background-color: #515151;
+    flex-direction: column;
+    transition: 0.3s;
+    display: flex;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card{
+    background-color: #14161A;
+    border-radius: 25px;
+    width: 198px;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > img{
+    width: 118px;
+    height: 118px;
+}
+
+.remove-btn{
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 4px 16px;
+}
+
+.price{
+    margin-top: 37px;
+}
+
+.sidebar-title{
+    margin: 40px auto;
+    text-align: center;
+}
+
+.close-btn{
+    width: 80%;
+    background-color: purple;
+    color: #fff;
+    margin: 40px auto;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.close-btn:active{
+    transform: scale(0.9);
+}
